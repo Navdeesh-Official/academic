@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.png">
+    <meta name="description"
+        content="Academic Portfolio of Navdeesh - A Class 9 student's curated presentation of academic performance, learning approach, and future direction. Prepared for academic evaluation.">
+    <title>Navdeesh</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">N</a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#performance" class="nav-link">Performance</a></li>
+                <li><a href="#achievements" class="nav-link">Achievements</a></li>
+                <li><a href="#strengths" class="nav-link">Strengths</a></li>
+                <li><a href="#direction" class="nav-link">Direction</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Scroll Progress -->
+    <div class="scroll-progress" id="scrollProgress">
+        <div class="progress-fill"></div>
+    </div>
+
+    <!-- Hero Section with Academic Snapshot -->
+    <section class="hero" id="hero">
+        <div class="hero-inner">
+            <!-- Academic Snapshot - Quick Overview for Judges -->
+            <div class="academic-snapshot">
+                <div class="snapshot-header">
+                    <span class="snapshot-label">Academic Snapshot</span>
+                    <span class="snapshot-session">Current Session 2025-26</span>
+                </div>
+                <div class="trust-badges">
+                    <div class="trust-badge">
+                        <div class="badge-icon badge-icon--stats">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <rect x="3" y="12" width="4" height="9" rx="1" fill="currentColor" opacity="0.3" />
+                                <rect x="10" y="8" width="4" height="13" rx="1" fill="currentColor" opacity="0.6" />
+                                <rect x="17" y="4" width="4" height="17" rx="1" fill="currentColor" />
+                            </svg>
+                        </div>
+                        <div class="badge-content">
+                            <span class="badge-value">95%</span>
+                            <span class="badge-label">Overall Average</span>
+                        </div>
+                    </div>
+                    <div class="trust-badge">
+                        <div class="badge-icon badge-icon--strength">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path
+                                    d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"
+                                    fill="currentColor" />
+                            </svg>
+                        </div>
+                        <div class="badge-content">
+                            <span class="badge-value">Conceptually Strong</span>
+                            <span class="badge-label">Math, Science & IT</span>
+                        </div>
+                    </div>
+                    <div class="trust-badge">
+                        <div class="badge-icon badge-icon--verified">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path
+                                    d="M9 12L11 14L15 10M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <div class="badge-content">
+                            <span class="badge-value">Consistent Performer</span>
+                            <span class="badge-label">Across All 6 Subjects</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <p class="hero-tagline">Navdeesh · Class IX · <strong>Tagore International School</strong>, Delhi</p>
+        </div>
+    </section>
+
+    <!-- About Section with Photo -->
+    <section class="section" id="about">
+        <div class="container">
+            <h2 class="section-title-center">About Me</h2>
+
+            <div class="about-layout">
+                <!-- Left: Introduction -->
+                <div class="about-main">
+                    <article class="intro-card">
+                        <div class="intro-header">
+                            <span class="intro-icon">📋</span>
+                            <h3>Introduction</h3>
+                            <div class="intro-tabs">
+                                <button class="intro-tab active" data-tab="intro">Bio</button>
+                                <button class="intro-tab" data-tab="aspiration">Goals</button>
+                            </div>
+                        </div>
+
+                        <div class="intro-content" id="introContent">
+                            <div class="tab-panel active" data-panel="intro">
+                                <p>I'm a disciplined and academically focused Class 9 student with a strong inclination
+                                    toward analytical thinking and structured learning. I approach academics with a
+                                    long-term vision—focusing not just on scores, but on building conceptual clarity
+                                    that will serve me in higher studies.</p>
+                                <p class="micro-reflection"><em>Currently focusing on:</em> strengthening
+                                    application-based problem solving in Mathematics and expanding vocabulary in German.
+                                </p>
+                            </div>
+                            <div class="tab-panel" data-panel="aspiration">
+                                <h4>What I'm Working Toward</h4>
+                                <ul class="aspiration-list">
+                                    <li>
+                                        <svg class="check-icon" viewBox="0 0 20 20">
+                                            <path
+                                                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" />
+                                        </svg>
+                                        Building a strong foundation in science, mathematics, and technology
+                                    </li>
+                                    <li>
+                                        <svg class="check-icon" viewBox="0 0 20 20">
+                                            <path
+                                                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" />
+                                        </svg>
+                                        Maintaining consistently high performance across core subjects
+                                    </li>
+                                    <li>
+                                        <svg class="check-icon" viewBox="0 0 20 20">
+                                            <path
+                                                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" />
+                                        </svg>
+                                        Exploring technology and AI as a long-term career direction
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Metacognition Signal -->
+                        <div class="judge-callout">
+                            <p>I recognize where I excel and where I need to improve. This awareness shapes how I
+                                allocate my study time and approach each subject.</p>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Right: Profile Card -->
+                <aside class="profile-card">
+                    <div class="profile-initial">N</div>
+                    <h3 class="profile-name">Navdeesh</h3>
+                    <p class="profile-details">Class IX, Delhi, India</p>
+                    <div class="profile-badge">
+                        <svg width="16" height="16" viewBox="0 0 20 20" fill="currentColor">
+                            <path
+                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                        Academic Year 2025-26
+                    </div>
+                    <ul class="profile-highlights">
+                        <li>I focus on understanding concepts deeply and consistently work to improve my
+                            performance across all subjects.</li>
+                    </ul>
+                </aside>
+            </div>
+        </div>
+    </section>
+
+    <!-- Academic Performance Section -->
+    <section class="section section-alt" id="performance">
+        <div class="container">
+            <h2 class="section-title-center">Academic Performance</h2>
+            <p class="section-subtitle-center">Data reflects current academic session. Results presented transparently,
+                including pending assessments.</p>
+
+            <!-- Performance Tabs -->
+            <div class="performance-tabs">
+                <button class="perf-tab active" data-perf-tab="overview">Overall Progress</button>
+                <button class="perf-tab" data-perf-tab="breakdown">Subject Breakdown</button>
+            </div>
+
+            <p class="data-note">"—" indicates tests not yet conducted or results pending. All scores are out of 35
+                (weekly) and 80 (mid-term).</p>
+
+            <!-- Overall Progress View -->
+            <div class="perf-panel active" data-perf-panel="overview">
+                <div class="subjects-table">
+                    <!-- English -->
+                    <div class="subject-row" data-subject="english">
+                        <div class="subject-row-header">
+                            <button class="subject-expand" aria-expanded="false">
+                                <svg class="expand-chevron" width="20" height="20" viewBox="0 0 20 20">
+                                    <path d="M6 8l4 4 4-4" stroke="currentColor" stroke-width="2" fill="none" />
+                                </svg>
+                            </button>
+                            <span class="subject-name">English</span>
+                            <span class="subject-badge-inline">BALANCED</span>
+                            <div class="subject-trend-mini">
+                                <svg class="trend-line" viewBox="0 0 80 30" preserveAspectRatio="none">
+                                    <polyline points="0,5 20,15 40,12 60,8 80,10" fill="none" stroke="currentColor"
+                                        stroke-width="2" />
+                                </svg>
+                            </div>
+                            <div class="subject-scores-mini">
+                                <span>33.5</span>
+                                <span>30.5</span>
+                                <span>31.5</span>
+                                <span>32.5</span>
+                            </div>
+                            <span class="subject-midterm">73.5</span>
+                            <span class="subject-total">93</span>
+                        </div>
+                        <div class="subject-row-detail">
+                            <div class="detail-insight">
+                                <div class="insight-chart">
+                                    <svg class="trend-chart" viewBox="0 0 200 60">
+                                        <polyline class="trend-area" points="0,15 50,35 100,30 150,25 200,20" />
+                                        <polyline class="trend-line-main" points="0,15 50,35 100,30 150,25 200,20" />
+                                        <circle cx="0" cy="15" r="4" class="trend-dot" />
+                                        <circle cx="50" cy="35" r="4" class="trend-dot" />
+                                        <circle cx="100" cy="30" r="4" class="trend-dot" />
+                                        <circle cx="150" cy="25" r="4" class="trend-dot" />
+                                        <circle cx="200" cy="20" r="4" class="trend-dot" />
+                                    </svg>
+                                </div>
+                                <div class="insight-text">
+                                    <h4>📊 English</h4>
+                                    <ul>
+                                        <li>Consistent results across weekly assessments</li>
+                                        <li>Strong mid-term performance (73.5/80)</li>
+                                        <li>Balanced reading and writing skills</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Mathematics -->
+                    <div class="subject-row subject-row--highlight" data-subject="mathematics">
+                        <div class="subject-row-header">
+                            <button class="subject-expand" aria-expanded="false">
+                                <svg class="expand-chevron" width="20" height="20" viewBox="0 0 20 20">
+                                    <path d="M6 8l4 4 4-4" stroke="currentColor" stroke-width="2" fill="none" />
+                                </svg>
+                            </button>
+                            <span class="subject-name">Mathematics</span>
+                            <span class="subject-badge-inline strength">Core Strength</span>
+                            <div class="subject-trend-mini">
+                                <svg class="trend-line" viewBox="0 0 80 30" preserveAspectRatio="none">
+                                    <polyline points="0,8 20,12 40,20 60,18 80,5" fill="none" stroke="currentColor"
+                                        stroke-width="2" />
+                                </svg>
+                            </div>
+                            <div class="subject-scores-mini">
+                                <span>33</span>
+                                <span>31</span>
+                                <span>27</span>
+                                <span>28</span>
+                            </div>
+                            <span class="subject-midterm">79</span>
+                            <span class="subject-total highlight">99</span>
+                        </div>
+                        <div class="subject-row-detail">
+                            <div class="detail-insight">
+                                <div class="insight-chart">
+                                    <svg class="trend-chart" viewBox="0 0 200 60">
+                                        <polyline class="trend-area" points="0,10 50,15 100,30 150,25 200,5" />
+                                        <polyline class="trend-line-main" points="0,10 50,15 100,30 150,25 200,5" />
+                                        <circle cx="0" cy="10" r="4" class="trend-dot" />
+                                        <circle cx="50" cy="15" r="4" class="trend-dot" />
+                                        <circle cx="100" cy="30" r="4" class="trend-dot" />
+                                        <circle cx="150" cy="25" r="4" class="trend-dot" />
+                                        <circle cx="200" cy="5" r="4" class="trend-dot" />
+                                    </svg>
+                                </div>
+                                <div class="insight-text">
+                                    <h4>📊 Mathematics</h4>
+                                    <ul>
+                                        <li><strong>Consistent results</strong> across assessments</li>
+                                        <li>Improving trend towards higher scores</li>
+                                        <li>High scores indicating strong conceptual grasp</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Science -->
+                    <div class="subject-row subject-row--highlight" data-subject="science">
+                        <div class="subject-row-header">
+                            <button class="subject-expand" aria-expanded="false">
+                                <svg class="expand-chevron" width="20" height="20" viewBox="0 0 20 20">
+                                    <path d="M6 8l4 4 4-4" stroke="currentColor" stroke-width="2" fill="none" />
+                                </svg>
+                            </button>
+                            <span class="subject-name">Science</span>
+                            <span class="subject-badge-inline strength">Core Strength</span>
+                            <div class="subject-trend-mini">
+                                <svg class="trend-line perfect" viewBox="0 0 80 30" preserveAspectRatio="none">
+                                    <polyline points="0,5 20,5 40,5 60,5 80,8" fill="none" stroke="currentColor"
+                                        stroke-width="2" />
+                                </svg>
+                            </div>
+                            <div class="subject-scores-mini">
+                                <span class="perfect">35</span>
+                                <span class="perfect">35</span>
+                                <span class="perfect">35</span>
+                                <span class="pending">—</span>
+                            </div>
+                            <span class="subject-midterm">78</span>
+                            <span class="subject-total highlight">98</span>
+                        </div>
+                        <div class="subject-row-detail">
+                            <div class="detail-insight">
+                                <div class="insight-chart">
+                                    <svg class="trend-chart perfect" viewBox="0 0 200 60">
+                                        <polyline class="trend-area" points="0,10 50,10 100,10 150,10 200,15" />
+                                        <polyline class="trend-line-main" points="0,10 50,10 100,10 150,10 200,15" />
+                                        <circle cx="0" cy="10" r="4" class="trend-dot" />
+                                        <circle cx="50" cy="10" r="4" class="trend-dot" />
+                                        <circle cx="100" cy="10" r="4" class="trend-dot" />
+                                        <circle cx="150" cy="10" r="4" class="trend-dot" />
+                                    </svg>
+                                </div>
+                                <div class="insight-text">
+                                    <h4>📊 Science</h4>
+                                    <ul>
+                                        <li><strong>Perfect weekly scores</strong> (35/35 consistently)</li>
+                                        <li>Demonstrates strong conceptual clarity</li>
+                                        <li>WT4 result pending</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Social Science -->
+                    <div class="subject-row" data-subject="ssc">
+                        <div class="subject-row-header">
+                            <button class="subject-expand" aria-expanded="false">
+                                <svg class="expand-chevron" width="20" height="20" viewBox="0 0 20 20">
+                                    <path d="M6 8l4 4 4-4" stroke="currentColor" stroke-width="2" fill="none" />
+                                </svg>
+                            </button>
+                            <span class="subject-name">Social Science</span>
+                            <span class="subject-badge-inline">Balanced</span>
+                            <div class="subject-trend-mini">
+                                <svg class="trend-line improving" viewBox="0 0 80 30" preserveAspectRatio="none">
+                                    <polyline points="0,25 20,15 40,10 60,12 80,8" fill="none" stroke="currentColor"
+                                        stroke-width="2" />
+                                </svg>
+                            </div>
+                            <div class="subject-scores-mini">
+                                <span>30</span>
+                                <span>33.5</span>
+                                <span>34.5</span>
+                                <span>33</span>
+                            </div>
+                            <span class="subject-midterm">77</span>
+                            <span class="subject-total">96</span>
+                        </div>
+                        <div class="subject-row-detail">
+                            <div class="detail-insight">
+                                <div class="insight-chart">
+                                    <svg class="trend-chart improving" viewBox="0 0 200 60">
+                                        <polyline class="trend-area" points="0,50 50,30 100,20 150,25 200,15" />
+                                        <polyline class="trend-line-main" points="0,50 50,30 100,20 150,25 200,15" />
+                                        <circle cx="0" cy="50" r="4" class="trend-dot" />
+                                        <circle cx="50" cy="30" r="4" class="trend-dot" />
+                                        <circle cx="100" cy="20" r="4" class="trend-dot" />
+                                        <circle cx="150" cy="25" r="4" class="trend-dot" />
+                                        <circle cx="200" cy="15" r="4" class="trend-dot" />
+                                    </svg>
+                                </div>
+                                <div class="insight-text">
+                                    <h4>📊 Social Science</h4>
+                                    <ul>
+                                        <li>Clear <strong>improving trend</strong> from WT1 to WT3</li>
+                                        <li>Steady performance maintained</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- German -->
+                    <div class="subject-row" data-subject="german">
+                        <div class="subject-row-header">
+                            <button class="subject-expand" aria-expanded="false">
+                                <svg class="expand-chevron" width="20" height="20" viewBox="0 0 20 20">
+                                    <path d="M6 8l4 4 4-4" stroke="currentColor" stroke-width="2" fill="none" />
+                                </svg>
+                            </button>
+                            <span class="subject-name">German</span>
+                            <span class="subject-badge-inline growth">Active Growth</span>
+                            <div class="subject-trend-mini">
+                                <svg class="trend-line improving" viewBox="0 0 80 30" preserveAspectRatio="none">
+                                    <polyline points="0,15 20,18 40,10 60,5 80,8" fill="none" stroke="currentColor"
+                                        stroke-width="2" />
+                                </svg>
+                            </div>
+                            <div class="subject-scores-mini">
+                                <span>31</span>
+                                <span>30.5</span>
+                                <span>33</span>
+                                <span>34.5</span>
+                            </div>
+                            <span class="subject-midterm">70</span>
+                            <span class="subject-total">89</span>
+                        </div>
+                        <div class="subject-row-detail">
+                            <div class="detail-insight">
+                                <div class="insight-chart">
+                                    <svg class="trend-chart improving" viewBox="0 0 200 60">
+                                        <polyline class="trend-area" points="0,30 50,35 100,20 150,10 200,15" />
+                                        <polyline class="trend-line-main" points="0,30 50,35 100,20 150,10 200,15" />
+                                        <circle cx="0" cy="30" r="4" class="trend-dot" />
+                                        <circle cx="50" cy="35" r="4" class="trend-dot" />
+                                        <circle cx="100" cy="20" r="4" class="trend-dot" />
+                                        <circle cx="150" cy="10" r="4" class="trend-dot" />
+                                        <circle cx="200" cy="15" r="4" class="trend-dot" />
+                                    </svg>
+                                </div>
+                                <div class="insight-text">
+                                    <h4>📊 German</h4>
+                                    <ul>
+                                        <li><strong>Clear upward trajectory</strong> (31 → 34.5)</li>
+                                        <li>Actively building vocabulary</li>
+                                        <li>Demonstrates growth mindset</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- IT -->
+                    <div class="subject-row subject-row--highlight" data-subject="it">
+                        <div class="subject-row-header">
+                            <button class="subject-expand" aria-expanded="false">
+                                <svg class="expand-chevron" width="20" height="20" viewBox="0 0 20 20">
+                                    <path d="M6 8l4 4 4-4" stroke="currentColor" stroke-width="2" fill="none" />
+                                </svg>
+                            </button>
+                            <span class="subject-name">IT</span>
+                            <span class="subject-badge-inline strength">Core Strength</span>
+                            <div class="subject-trend-mini">
+                                <span class="na-indicator">—</span>
+                            </div>
+                            <div class="subject-scores-mini na">
+                                <span>–</span>
+                                <span>–</span>
+                                <span>–</span>
+                                <span>–</span>
+                            </div>
+                            <span class="subject-midterm">48<small>/50</small></span>
+                            <span class="subject-total highlight">98</span>
+                        </div>
+                        <div class="subject-row-detail">
+                            <div class="detail-insight">
+                                <div class="insight-text full-width">
+                                    <h4>📊 Information Technology</h4>
+                                    <ul>
+                                        <li>No weekly tests conducted for this subject</li>
+                                        <li><strong>Excellent mid-term</strong> (48/50 = 96%)</li>
+                                        <li>Aligns with interest in technology and computing</li>
+                                        <li>Actively explores programming beyond curriculum</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Subject Breakdown View -->
+            <div class="perf-panel" data-perf-panel="breakdown">
+                <div class="breakdown-grid">
+                    <div class="breakdown-card breakdown-card--primary">
+                        <h3>Core Strengths</h3>
+                        <p class="breakdown-subtitle">Subjects with highest performance and consistent excellence</p>
+                        <div class="breakdown-items">
+                            <div class="breakdown-item">
+                                <span class="item-name">Mathematics</span>
+                                <span class="item-score">99</span>
+                                <div class="item-bar">
+                                    <div class="item-fill" style="--w: 99%"></div>
+                                </div>
+                            </div>
+                            <div class="breakdown-item">
+                                <span class="item-name">Science</span>
+                                <span class="item-score">98</span>
+                                <div class="item-bar">
+                                    <div class="item-fill" style="--w: 98%"></div>
+                                </div>
+                            </div>
+                            <div class="breakdown-item">
+                                <span class="item-name">IT</span>
+                                <span class="item-score">98</span>
+                                <div class="item-bar">
+                                    <div class="item-fill" style="--w: 98%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="breakdown-card">
+                        <h3>Balanced Performance</h3>
+                        <p class="breakdown-subtitle">Consistent across all assessments</p>
+                        <div class="breakdown-items">
+                            <div class="breakdown-item">
+                                <span class="item-name">Social Science</span>
+                                <span class="item-score">96</span>
+                                <div class="item-bar">
+                                    <div class="item-fill balanced" style="--w: 96%"></div>
+                                </div>
+                            </div>
+                            <div class="breakdown-item">
+                                <span class="item-name">English</span>
+                                <span class="item-score">93</span>
+                                <div class="item-bar">
+                                    <div class="item-fill balanced" style="--w: 93%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="breakdown-card">
+                        <h3>Active Growth</h3>
+                        <p class="breakdown-subtitle">Clear improvement trajectory</p>
+                        <div class="breakdown-items">
+                            <div class="breakdown-item">
+                                <span class="item-name">German</span>
+                                <span class="item-score">89</span>
+                                <div class="item-bar">
+                                    <div class="item-fill growth" style="--w: 89%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="growth-note">Weekly test trend: 31 → 30.5 → 33 → 34.5 ↑</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements & Recognition Section -->
+    <section class="section" id="achievements">
+        <div class="container">
+            <h2 class="section-title-center">Achievements & Recognition</h2>
+            <p class="section-subtitle-center">External validation of my skills and consistent effort.</p>
+
+            <!-- Featured Award -->
+            <div class="featured-achievement">
+                <div class="achievement-badge-large">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" />
+                    </svg>
+                </div>
+                <div class="achievement-content">
+                    <span class="achievement-tag international">International Award</span>
+                    <h3>International Teen Video Challenge 2025</h3>
+                    <p class="achievement-position">Global Spotlight Award — 2nd Runner-up</p>
+                    <p class="achievement-desc">Topic: "Climate Change and Our Responsibility: How Can Young People Make
+                        a Difference?"</p>
+                    <p class="achievement-org">Organized by Abhyeti Foundation · April 2025</p>
+                </div>
+                <div class="achievement-image">
+                    <img src="certifications/International Teen Video Challenge 2025 Global Spotlight Award.png"
+                        alt="International Teen Video Challenge Certificate" loading="lazy">
+                </div>
+            </div>
+
+            <!-- Achievement Categories -->
+            <div class="achievements-grid">
+                <!-- Coding & Technology -->
+                <div class="achievement-category">
+                    <h3 class="category-title">
+                        <span class="category-icon">💻</span>
+                        Coding & Technology
+                    </h3>
+                    <div class="achievement-cards">
+                        <article class="achievement-card achievement-card--highlight">
+                            <div class="card-header">
+                                <span class="rank-badge">Rank #27</span>
+                                <span class="level-tag">National</span>
+                            </div>
+                            <h4>Python Advance India Nationals 2025</h4>
+                            <p>iCode Global Hackathon · 9th Edition</p>
+                            <span class="date">September 2025</span>
+                        </article>
+                        <article class="achievement-card">
+                            <div class="card-header">
+                                <span class="rank-badge">Rank #47</span>
+                                <span class="level-tag">Global</span>
+                            </div>
+                            <h4>iCode Global Hackathon 2025</h4>
+                            <p>Python Advance Category</p>
+                            <span class="date">October 2025</span>
+                        </article>
+                        <article class="achievement-card">
+                            <div class="card-header">
+                                <span class="rank-badge">3rd Position</span>
+                            </div>
+                            <h4>Ordin@trix Kuriobots 2025</h4>
+                            <p>Innovate@trix Event · Kurious Learning Labs</p>
+                            <span class="date">May 2025</span>
+                        </article>
+                        <article class="achievement-card">
+                            <h4>Force Fest 2K25 — Pygrammer</h4>
+                            <p>Programming Competition</p>
+                            <p class="org-name">Apeejay School, Panchsheel Park</p>
+                            <span class="date">October 2025</span>
+                        </article>
+                    </div>
+                </div>
+
+                <!-- Innovation & STEM -->
+                <div class="achievement-category">
+                    <h3 class="category-title">
+                        <span class="category-icon">🔬</span>
+                        Innovation & STEM
+                    </h3>
+                    <div class="achievement-cards">
+                        <article class="achievement-card achievement-card--cert">
+                            <div class="cert-badge">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M9 12L11 14L15 10M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" />
+                                </svg>
+                                Govt. of India
+                            </div>
+                            <h4>School Innovation Marathon 2025-26</h4>
+                            <p>Design Thinking & Innovation Course</p>
+                            <p class="org-name">Atal Innovation Mission · Ministry of Education</p>
+                            <span class="date">2025-26</span>
+                        </article>
+                        <article class="achievement-card achievement-card--cert">
+                            <div class="cert-badge">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M9 12L11 14L15 10M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" />
+                                </svg>
+                                British Council
+                            </div>
+                            <h4>STEM Circuit for SIC 2025</h4>
+                            <p>Future Leaders Fest</p>
+                            <p class="org-name">Bluebells School International</p>
+                            <span class="date">August 2025</span>
+                        </article>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Achievement Stats -->
+            <div class="achievement-stats">
+                <div class="stat-item">
+                    <span class="stat-number">16</span>
+                    <span class="stat-label">Generation Global Programs</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">1</span>
+                    <span class="stat-label">International Award</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">4</span>
+                    <span class="stat-label">Coding Competitions</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">2</span>
+                    <span class="stat-label">STEM Certifications</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Strengths Section -->
+    <section class="section" id="strengths">
+        <div class="container">
+            <h2 class="section-title-center">Core Strengths</h2>
+            <p class="section-subtitle-center">Patterns I've observed in my own learning—supported by performance data.
+            </p>
+
+            <div class="strengths-grid">
+                <article class="strength-card strength-card--featured">
+                    <span class="strength-number">01</span>
+                    <h3 style="color: white;">Analytical Thinking</h3>
+                    <p style="color: white;">I tend to break problems into smaller parts before attempting solutions.
+                        This approach has helped me score consistently in subjects that require logical reasoning.</p>
+                    <div class="strength-proof">
+                        <span class="proof-label">What the data shows</span>
+                        <p>Math (99) and Science (98)—even when question types varied week to week, scores remained
+                            stable.</p>
+                    </div>
+                </article>
+                <article class="strength-card">
+                    <span class="strength-number">02</span>
+                    <h3>Technical Curiosity</h3>
+                    <p>Beyond the IT curriculum, I explore programming on my own. Ranked #27 nationally in Python at the
+                        iCode Global Hackathon.</p>
+                    <p class="micro-note"><em>Currently learning:</em> Python automation and basic AI concepts.</p>
+                </article>
+                <article class="strength-card">
+                    <span class="strength-number">03</span>
+                    <h3>Growth Response</h3>
+                    <p>When I notice a gap, I address it systematically. German scores moved from 31 to 34.5 over four
+                        weeks—a direct result of focused vocabulary work.</p>
+                </article>
+                <article class="strength-card">
+                    <span class="strength-number">04</span>
+                    <h3>Reliable Work Habits</h3>
+                    <p>No subject has dropped significantly. I manage time across six subjects without major
+                        fluctuations in performance.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Direction Section -->
+    <section class="section section-alt" id="direction">
+        <div class="container">
+            <h2 class="section-title-center">Direction</h2>
+            <p class="section-subtitle-center">Where I'm headed—and the deliberate steps I'm taking to get there.</p>
+
+            <div class="direction-timeline">
+                <div class="timeline-step timeline-step--now">
+                    <div class="step-marker">Now</div>
+                    <div class="step-content">
+                        <h3>Current Focus</h3>
+                        <ul>
+                            <li>Maintaining consistency across all six subjects</li>
+                            <li>Actively working to improve application-based problem solving in Math</li>
+                            <li>Building German vocabulary through daily practice</li>
+                            <li>Exploring Python and basic AI concepts independently</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-connector"></div>
+                <div class="timeline-step timeline-step--next">
+                    <div class="step-marker">Next</div>
+                    <div class="step-content">
+                        <h3>Near-Term Goals</h3>
+                        <ul>
+                            <li>Excel in Class 10 Board Examinations</li>
+                            <li>Participate in academic olympiads</li>
+                            <li>Develop competitive programming skills</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-connector"></div>
+                <div class="timeline-step timeline-step--future">
+                    <div class="step-marker">Future</div>
+                    <div class="step-content">
+                        <h3>Long-Term Vision</h3>
+                        <ul>
+                            <li>Strong foundation in science & technology</li>
+                            <li>Higher education in AI / technical fields</li>
+                            <li>Contribute through research & innovation</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-main">
+                    <h3>Navdeesh</h3>
+                    <p>Class IX · Tagore International School, Delhi</p>
+                    <p class="footer-year">Academic Year 2025-26</p>
+                </div>
+                <div class="footer-note">
+                    <p>Portfolio prepared for academic evaluation.</p>
+                    <p class="footer-data-note">All data reflects current session results. Pending assessments noted
+                        transparently.</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>Thank you for taking the time to review this portfolio.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
