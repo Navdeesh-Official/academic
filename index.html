@@ -196,8 +196,8 @@
                 <button class="perf-tab" data-perf-tab="breakdown">Subject Breakdown</button>
             </div>
 
-            <p class="data-note">"—" indicates tests not yet conducted or results pending. All scores are out of 35
-                (weekly) and 80 (mid-term).</p>
+            <p class="data-note">Scores shown: WT1, WT2 | Mid-term | WT3, WT4 | Total. "—" indicates pending results.
+            </p>
 
             <!-- Overall Progress View -->
             <div class="perf-panel active" data-perf-panel="overview">
@@ -213,31 +213,35 @@
                             <span class="subject-name">English</span>
                             <span class="subject-badge-inline">BALANCED</span>
                             <div class="subject-trend-mini">
-                                <svg class="trend-line" viewBox="0 0 80 30" preserveAspectRatio="none">
-                                    <polyline points="0,5 20,15 40,12 60,8 80,10" fill="none" stroke="currentColor"
+                                <!-- WT1, WT2, Mid, WT3, WT4 -->
+                                <svg class="trend-line" viewBox="0 0 100 30" preserveAspectRatio="none">
+                                    <polyline points="0,8 25,18 50,5 75,15 100,12" fill="none" stroke="currentColor"
                                         stroke-width="2" />
                                 </svg>
                             </div>
                             <div class="subject-scores-mini">
                                 <span>33.5</span>
                                 <span>30.5</span>
+                            </div>
+                            <span class="subject-midterm">73.5</span>
+                            <div class="subject-scores-mini">
                                 <span>31.5</span>
                                 <span>32.5</span>
                             </div>
-                            <span class="subject-midterm">73.5</span>
                             <span class="subject-total">93</span>
                         </div>
                         <div class="subject-row-detail">
                             <div class="detail-insight">
                                 <div class="insight-chart">
                                     <svg class="trend-chart" viewBox="0 0 200 60">
-                                        <polyline class="trend-area" points="0,15 50,35 100,30 150,25 200,20" />
-                                        <polyline class="trend-line-main" points="0,15 50,35 100,30 150,25 200,20" />
-                                        <circle cx="0" cy="15" r="4" class="trend-dot" />
-                                        <circle cx="50" cy="35" r="4" class="trend-dot" />
-                                        <circle cx="100" cy="30" r="4" class="trend-dot" />
-                                        <circle cx="150" cy="25" r="4" class="trend-dot" />
-                                        <circle cx="200" cy="20" r="4" class="trend-dot" />
+                                        <!-- WT1(33.5), WT2(30.5), Mid(92%), WT3(31.5), WT4(32.5) -->
+                                        <polyline class="trend-area" points="0,10 50,25 100,8 150,20 200,15" />
+                                        <polyline class="trend-line-main" points="0,10 50,25 100,8 150,20 200,15" />
+                                        <circle cx="0" cy="10" r="4" class="trend-dot" />
+                                        <circle cx="50" cy="25" r="4" class="trend-dot" />
+                                        <circle cx="100" cy="8" r="4" class="trend-dot trend-dot--mid" />
+                                        <circle cx="150" cy="20" r="4" class="trend-dot" />
+                                        <circle cx="200" cy="15" r="4" class="trend-dot" />
                                     </svg>
                                 </div>
                                 <div class="insight-text">
@@ -263,31 +267,35 @@
                             <span class="subject-name">Mathematics</span>
                             <span class="subject-badge-inline strength">Core Strength</span>
                             <div class="subject-trend-mini">
-                                <svg class="trend-line" viewBox="0 0 80 30" preserveAspectRatio="none">
-                                    <polyline points="0,8 20,12 40,20 60,18 80,5" fill="none" stroke="currentColor"
+                                <!-- WT1, WT2, Mid, WT3, WT4 -->
+                                <svg class="trend-line" viewBox="0 0 100 30" preserveAspectRatio="none">
+                                    <polyline points="0,8 25,12 50,3 75,22 100,18" fill="none" stroke="currentColor"
                                         stroke-width="2" />
                                 </svg>
                             </div>
                             <div class="subject-scores-mini">
                                 <span>33</span>
                                 <span>31</span>
+                            </div>
+                            <span class="subject-midterm">79</span>
+                            <div class="subject-scores-mini">
                                 <span>27</span>
                                 <span>28</span>
                             </div>
-                            <span class="subject-midterm">79</span>
                             <span class="subject-total highlight">99</span>
                         </div>
                         <div class="subject-row-detail">
                             <div class="detail-insight">
                                 <div class="insight-chart">
                                     <svg class="trend-chart" viewBox="0 0 200 60">
-                                        <polyline class="trend-area" points="0,10 50,15 100,30 150,25 200,5" />
-                                        <polyline class="trend-line-main" points="0,10 50,15 100,30 150,25 200,5" />
+                                        <!-- WT1(33), WT2(31), Mid(99%), WT3(27), WT4(28) -->
+                                        <polyline class="trend-area" points="0,10 50,15 100,5 150,30 200,25" />
+                                        <polyline class="trend-line-main" points="0,10 50,15 100,5 150,30 200,25" />
                                         <circle cx="0" cy="10" r="4" class="trend-dot" />
                                         <circle cx="50" cy="15" r="4" class="trend-dot" />
-                                        <circle cx="100" cy="30" r="4" class="trend-dot" />
-                                        <circle cx="150" cy="25" r="4" class="trend-dot" />
-                                        <circle cx="200" cy="5" r="4" class="trend-dot" />
+                                        <circle cx="100" cy="5" r="4" class="trend-dot trend-dot--mid" />
+                                        <circle cx="150" cy="30" r="4" class="trend-dot" />
+                                        <circle cx="200" cy="25" r="4" class="trend-dot" />
                                     </svg>
                                 </div>
                                 <div class="insight-text">
@@ -313,29 +321,33 @@
                             <span class="subject-name">Science</span>
                             <span class="subject-badge-inline strength">Core Strength</span>
                             <div class="subject-trend-mini">
-                                <svg class="trend-line perfect" viewBox="0 0 80 30" preserveAspectRatio="none">
-                                    <polyline points="0,5 20,5 40,5 60,5 80,8" fill="none" stroke="currentColor"
+                                <!-- WT1, WT2, Mid, WT3, WT4(pending) -->
+                                <svg class="trend-line perfect" viewBox="0 0 100 30" preserveAspectRatio="none">
+                                    <polyline points="0,8 25,8 50,3 75,8" fill="none" stroke="currentColor"
                                         stroke-width="2" />
                                 </svg>
                             </div>
                             <div class="subject-scores-mini">
                                 <span class="perfect">35</span>
                                 <span class="perfect">35</span>
+                            </div>
+                            <span class="subject-midterm">78</span>
+                            <div class="subject-scores-mini">
                                 <span class="perfect">35</span>
                                 <span class="pending">—</span>
                             </div>
-                            <span class="subject-midterm">78</span>
                             <span class="subject-total highlight">98</span>
                         </div>
                         <div class="subject-row-detail">
                             <div class="detail-insight">
                                 <div class="insight-chart">
                                     <svg class="trend-chart perfect" viewBox="0 0 200 60">
-                                        <polyline class="trend-area" points="0,10 50,10 100,10 150,10 200,15" />
-                                        <polyline class="trend-line-main" points="0,10 50,10 100,10 150,10 200,15" />
+                                        <!-- WT1(35), WT2(35), Mid(97.5%), WT3(35), WT4(pending) -->
+                                        <polyline class="trend-area" points="0,10 50,10 100,5 150,10" />
+                                        <polyline class="trend-line-main" points="0,10 50,10 100,5 150,10" />
                                         <circle cx="0" cy="10" r="4" class="trend-dot" />
                                         <circle cx="50" cy="10" r="4" class="trend-dot" />
-                                        <circle cx="100" cy="10" r="4" class="trend-dot" />
+                                        <circle cx="100" cy="5" r="4" class="trend-dot trend-dot--mid" />
                                         <circle cx="150" cy="10" r="4" class="trend-dot" />
                                     </svg>
                                 </div>
@@ -362,31 +374,35 @@
                             <span class="subject-name">Social Science</span>
                             <span class="subject-badge-inline">Balanced</span>
                             <div class="subject-trend-mini">
-                                <svg class="trend-line improving" viewBox="0 0 80 30" preserveAspectRatio="none">
-                                    <polyline points="0,25 20,15 40,10 60,12 80,8" fill="none" stroke="currentColor"
+                                <!-- WT1, WT2, Mid, WT3, WT4 -->
+                                <svg class="trend-line improving" viewBox="0 0 100 30" preserveAspectRatio="none">
+                                    <polyline points="0,25 25,15 50,5 75,10 100,12" fill="none" stroke="currentColor"
                                         stroke-width="2" />
                                 </svg>
                             </div>
                             <div class="subject-scores-mini">
                                 <span>30</span>
                                 <span>33.5</span>
+                            </div>
+                            <span class="subject-midterm">77</span>
+                            <div class="subject-scores-mini">
                                 <span>34.5</span>
                                 <span>33</span>
                             </div>
-                            <span class="subject-midterm">77</span>
                             <span class="subject-total">96</span>
                         </div>
                         <div class="subject-row-detail">
                             <div class="detail-insight">
                                 <div class="insight-chart">
                                     <svg class="trend-chart improving" viewBox="0 0 200 60">
-                                        <polyline class="trend-area" points="0,50 50,30 100,20 150,25 200,15" />
-                                        <polyline class="trend-line-main" points="0,50 50,30 100,20 150,25 200,15" />
-                                        <circle cx="0" cy="50" r="4" class="trend-dot" />
-                                        <circle cx="50" cy="30" r="4" class="trend-dot" />
-                                        <circle cx="100" cy="20" r="4" class="trend-dot" />
-                                        <circle cx="150" cy="25" r="4" class="trend-dot" />
-                                        <circle cx="200" cy="15" r="4" class="trend-dot" />
+                                        <!-- WT1(30), WT2(33.5), Mid(96%), WT3(34.5), WT4(33) -->
+                                        <polyline class="trend-area" points="0,45 50,25 100,8 150,15 200,20" />
+                                        <polyline class="trend-line-main" points="0,45 50,25 100,8 150,15 200,20" />
+                                        <circle cx="0" cy="45" r="4" class="trend-dot" />
+                                        <circle cx="50" cy="25" r="4" class="trend-dot" />
+                                        <circle cx="100" cy="8" r="4" class="trend-dot trend-dot--mid" />
+                                        <circle cx="150" cy="15" r="4" class="trend-dot" />
+                                        <circle cx="200" cy="20" r="4" class="trend-dot" />
                                     </svg>
                                 </div>
                                 <div class="insight-text">
@@ -411,31 +427,35 @@
                             <span class="subject-name">German</span>
                             <span class="subject-badge-inline growth">Active Growth</span>
                             <div class="subject-trend-mini">
-                                <svg class="trend-line improving" viewBox="0 0 80 30" preserveAspectRatio="none">
-                                    <polyline points="0,15 20,18 40,10 60,5 80,8" fill="none" stroke="currentColor"
+                                <!-- WT1, WT2, Mid, WT3, WT4 -->
+                                <svg class="trend-line improving" viewBox="0 0 100 30" preserveAspectRatio="none">
+                                    <polyline points="0,18 25,20 50,10 75,14 100,5" fill="none" stroke="currentColor"
                                         stroke-width="2" />
                                 </svg>
                             </div>
                             <div class="subject-scores-mini">
                                 <span>31</span>
                                 <span>30.5</span>
+                            </div>
+                            <span class="subject-midterm">70</span>
+                            <div class="subject-scores-mini">
                                 <span>33</span>
                                 <span>34.5</span>
                             </div>
-                            <span class="subject-midterm">70</span>
                             <span class="subject-total">89</span>
                         </div>
                         <div class="subject-row-detail">
                             <div class="detail-insight">
                                 <div class="insight-chart">
                                     <svg class="trend-chart improving" viewBox="0 0 200 60">
-                                        <polyline class="trend-area" points="0,30 50,35 100,20 150,10 200,15" />
-                                        <polyline class="trend-line-main" points="0,30 50,35 100,20 150,10 200,15" />
+                                        <!-- WT1(31), WT2(30.5), Mid(87.5%), WT3(33), WT4(34.5) -->
+                                        <polyline class="trend-area" points="0,30 50,35 100,15 150,20 200,10" />
+                                        <polyline class="trend-line-main" points="0,30 50,35 100,15 150,20 200,10" />
                                         <circle cx="0" cy="30" r="4" class="trend-dot" />
                                         <circle cx="50" cy="35" r="4" class="trend-dot" />
-                                        <circle cx="100" cy="20" r="4" class="trend-dot" />
-                                        <circle cx="150" cy="10" r="4" class="trend-dot" />
-                                        <circle cx="200" cy="15" r="4" class="trend-dot" />
+                                        <circle cx="100" cy="15" r="4" class="trend-dot trend-dot--mid" />
+                                        <circle cx="150" cy="20" r="4" class="trend-dot" />
+                                        <circle cx="200" cy="10" r="4" class="trend-dot" />
                                     </svg>
                                 </div>
                                 <div class="insight-text">
@@ -466,10 +486,12 @@
                             <div class="subject-scores-mini na">
                                 <span>–</span>
                                 <span>–</span>
+                            </div>
+                            <span class="subject-midterm">48<small>/50</small></span>
+                            <div class="subject-scores-mini na">
                                 <span>–</span>
                                 <span>–</span>
                             </div>
-                            <span class="subject-midterm">48<small>/50</small></span>
                             <span class="subject-total highlight">98</span>
                         </div>
                         <div class="subject-row-detail">
@@ -801,6 +823,5 @@
 
     <script src="script.js"></script>
 </body>
-
 
 </html>
