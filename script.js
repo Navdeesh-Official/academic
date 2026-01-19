@@ -1,8 +1,3 @@
-/**
- * Navdeesh Academic Portfolio
- * Judge Psychology Enhanced JavaScript
- */
-
 document.addEventListener('DOMContentLoaded', function () {
 
     // =========================================
@@ -266,3 +261,4 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
 });
+
